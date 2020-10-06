@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductDescriptionComponent } from './product-description.component';
+import { Album interface} from '../album'
 
 describe('ProductDescriptionComponent', () => {
   let component: ProductDescriptionComponent;
