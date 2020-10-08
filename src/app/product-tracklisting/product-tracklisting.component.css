@@ -1,17 +1,16 @@
-.tracklisting{
-    font-size:16px;
-    padding-top: 10px;
+.tracklisting {
+  font-size: 16px;
+  padding-top: 10px;
 }
 
-ul{
-    display:block;
-    line-height: 30px;
+li {
+  display: block;
+  line-height: 30px;
 }
-ul{
-    list-style-type: none
+ul {
+  list-style-type: none;
 }
 
-button{
-    line-height:1;
-
+button {
+  line-height: 1;
 }
