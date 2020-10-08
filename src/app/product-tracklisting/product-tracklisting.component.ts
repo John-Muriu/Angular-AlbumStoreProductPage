@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { Album } from '../album';
-import {  ProductService } from '../product.service';
+import { Component, OnInit } from "@angular/core";
+
+// import { from } from "rxjs/observable/from";
+import { ProductService } from "../product.service";
+import { Album } from "../album";
 
 @Component({
-  selector: 'app-product-tracklisting',
-  templateUrl: './product-tracklisting.component.html',
-  styleUrls: ['./product-tracklisting.component.css']
+  selector: "app-product-tracklisting",
+  templateUrl: "./product-tracklisting.component.html",
+  styleUrls: ["./product-tracklisting.component.css"],
 })
 export class ProductTracklistingComponent implements OnInit {
- albumInfo: album;
+  albumInfo: Album;
 
-  constructor(private _productService :ProductService) {} 
+  constructor(private _productService: ProductService) {}
 
   ngOnInit() {
-    this._productService.getAlbum(1).subscribe(response => this.albumInfo = response);
+    this._productService
+      .getAlbum(1)
+      .subscribe((response) => (this.albumInfo = response));
   }
-
 }
